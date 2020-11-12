@@ -60,14 +60,10 @@ try:
         sendmsg('takeoff')
 
 
-        # Make a square
-        sendmsg('forward 100')
-        sendmsg('ccw 90')
-        sendmsg('forward 100')
-        sendmsg('ccw 90')
-        sendmsg('forward 100')
-        sendmsg('ccw 90')
-        sendmsg('forward 100')
+        # Make a square within a for loop
+        for i in range(4):
+            sendmsg('forward 100')
+            sendmsg('ccw 90')
 
 
         sendmsg('land')
