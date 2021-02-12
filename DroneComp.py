@@ -45,16 +45,30 @@ recvThread.start()
 
 # Drones mission through the first hula hoop
 def firstHoop():
+    sendmsg('up 10')
+    sendmsg('forward 215')
+
 
 #Drones mission through the second hula hoop
 def secondHoop():
+    sendmsg('go 250 0 75 75')
+
 
 
 #Drones mission through the third Hula Hoop with a Yaw
-def thirdHoopYaw
+def thirdHoopYaw():
+    sendmsg('ccw 90')
+    sendmsg('forward 200')
+
+
 
 #Drones mission through the fourth hula hoop
-def fouthHoop()
+def fourthHoop():
+    sendmsg('ccw 90')
+    sendmsg('forward 100')
+    sendmsg('down 50')
+    forward('forward 100')
+
 
 
 print("\nFirst & Last Names: Luthando Manzini")
@@ -72,12 +86,11 @@ try:
         sendmsg('command', 0)
         sendmsg('takeoff')
 
+        firstHoop()
 
+        secondHoop()
 
-
-
-
-
+        thirdHoopYaw()
 
         sendmsg('land')
         print('\nGreat Flight!!!')
