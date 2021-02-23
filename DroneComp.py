@@ -57,16 +57,15 @@ def secondHoop():
 
 #Drones mission through the third Hula Hoop with a Yaw
 def thirdHoopYaw():
-    sendmsg('ccw 90')
-    sendmsg('forward 260')
-    sendmsg('ccw 90')
+    sendmsg('left 285')
+    sendmsg('ccw 180')
+    sendmsg('forward 120')
 
 
 #Drones mission through the fourth hula hoop
 def fourthHoop():
-    sendmsg('forward 100')
     sendmsg('down 50')
-    sendmsg('forward 250')
+    sendmsg('forward 350')
 
 
 
@@ -92,6 +91,8 @@ try:
         thirdHoopYaw()
 
         fourthHoop()
+
+
 
         sendmsg('land')
         print('\nGreat Flight!!!')
